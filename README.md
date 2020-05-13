@@ -1,29 +1,52 @@
-# LAB: Deployment
+# LAB - 00
 
-Watch the [Tutorial Video](https://youtu.be/s8tQd4akmb8)
+## Proof og life server 
 
-## Get this code up and running at Heroku!
+### Author: Israa Othman
 
-In the `starter-code` folder, you will find the base code that you should be configuring and deploying.
+### Links and Resources
 
-The `solution` folder is provided as a reference (it's the code produced in the tutorial video) so that you can compare your deployed code and README to the accepted standard.
+- [submission PR](https://github.com/401-advanced-javascript-israaOthman/deploymentWorkshop-lab00/pull/2)
+- [ci/cd](https://travis-ci.com/github/401-advanced-javascript-israaOthman/deploymentWorkshop-lab00) (Travis CI)
+- [front-end application](https://d-workshop-lab00-401.herokuapp.com/) (when applicable)
 
-## Requirements
+#### Documentation 
+- [jsdoc](https://d-workshop-lab00-401.herokuapp.com/docs/)
 
-- Connect GitHub Actions to your repository
-  - Setup the Node.js workflow
+### Modules 
+#### 'pos.js'
+##### Exported Values and Methods 
 
-- Connect Heroku to your git account
-  - Set heroku to auto deploy your repository from master (or any named branch)
+###### 'isAlive(dead) -> boolean
+Return true/false to indicate how the server works 
 
-- Create documentation
+### Setup
 
-- Compose a complete "README"
+#### `.env` requirements
 
-## Testing
+- `PORT` - 3000
 
-- Both unit and lint tests in starter code pass in GitHub Actions
+#### How to initialize/run your application
 
-### Assignment Submission Instructions
+- `npm start`
+- Endpoint: `/`
+    - Returns a boolean 
+- Endpoint: `/docs`
+    - Returns JsDoc Documentation pages  
 
-- Submit a link to the Repository you created for this lab, which should have a completed README.md file
+#### How to use your library
+
+#### Tests
+
+- How do you run tests? 
+   - Unit Tests : `npm test`
+   - Limit Tests : `npm run limit`
+- Any tests of note? 
+    - I faced a problem when I tried to run this command `npm run jsdoc`   
+      and when I searched about it I found that I should install `npm install -g jsdoc`  
+      before .... this wasn't in the tutorial 
+- Describe any tests that you did not complete, skipped, etc
+    - every thing is completed 
+
+#### UML
+![UML Diagram](umlDiagram00.png)
